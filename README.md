@@ -19,4 +19,4 @@
 
 # Bootique Asciidoc extension
 
-Asciidoc extension for customization of Bootique documentation.
+Asciidoc postprocessor for customization of Bootique documentation.
