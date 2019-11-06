@@ -47,6 +47,7 @@ public class BootiquePostprocessor extends Postprocessor {
         ICONS_REPLACEMENT.put("icon-tip", "fa-lightbulb-o");
         ICONS_REPLACEMENT.put("icon-note", "fa-info-circle");
         ICONS_REPLACEMENT.put("icon-important", "fa-exclamation-circle");
+        ICONS_REPLACEMENT.put("icon-warning", "fa-exclamation-triangle");
         ICONS_REPLACEMENT.put("icon-caution", "fa-exclamation-triangle");
     }
 
@@ -107,10 +108,8 @@ public class BootiquePostprocessor extends Postprocessor {
 
         end += tocEndString.length() + 1;
 
+        // normalize ToC, can also modify layout here if needed
         org.jsoup.nodes.Document tocDoc = Jsoup.parseBodyFragment(output.substring(start, end));
-        tocDoc.select("ul").addClass("nav");
-        tocDoc.select("a").addClass("nav-link");
-        tocDoc.select("div#toc").addClass("toc-side");
         String toc = tocDoc.body().html();
 
         Object destDir = document.getOptions().get(Options.DESTINATION_DIR);
