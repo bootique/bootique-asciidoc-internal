@@ -108,8 +108,10 @@ public class BootiquePostprocessor extends Postprocessor {
 
         end += tocEndString.length() + 1;
 
-        // normalize ToC, can also modify layout here if needed
+        // normalize ToC, also modify layout here as needed
         org.jsoup.nodes.Document tocDoc = Jsoup.parseBodyFragment(output.substring(start, end));
+        tocDoc.select("ul").addClass("nav");
+        tocDoc.select("a").addClass("nav-link");
         String toc = tocDoc.body().html();
 
         Object destDir = document.getOptions().get(Options.DESTINATION_DIR);
