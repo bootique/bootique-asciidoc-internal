@@ -44,12 +44,11 @@
         <jsoup.version>1.12.1</jsoup.version>
     </properties>
 
-    <!-- TODO: set actual location -->
-    <!--scm>
+    <scm>
         <developerConnection>scm:git:ssh://git@github.com/bootique/bootique-asciidoc-internal</developerConnection>
         <url>https://github.com/bootique/bootique-asciidoc-internal</url>
         <tag>HEAD</tag>
-    </scm-->
+    </scm>
 
     <distributionManagement>
         <repository>
