@@ -28,7 +28,7 @@
 
     <groupId>io.bootique.docs</groupId>
     <artifactId>bootique-asciidoc-internal</artifactId>
-    <version>3.0.M2-SNAPSHOT</version>
+    <version>3.0.M2</version>
     <packaging>jar</packaging>
 
     <name>bootique-asciidoc-internal: Asciidoc extension for Bootique docs</name>
@@ -45,7 +45,7 @@
     <scm>
         <developerConnection>scm:git:ssh://git@github.com/bootique/bootique-asciidoc-internal</developerConnection>
         <url>https://github.com/bootique/bootique-asciidoc-internal</url>
-        <tag>HEAD</tag>
+        <tag>3.0.M2</tag>
     </scm>
 
     <dependencyManagement>
