@@ -35,8 +35,9 @@ import org.asciidoctor.extension.Postprocessor;
 import org.jsoup.Jsoup;
 
 /**
- *
+ * @deprecated in favour of <a href="https://github.com/bootique-tools/hugo-asciidoctorj-extension">hugo-asciidoctorj-extension</a>
  */
+@Deprecated
 public class BootiquePostprocessor extends Postprocessor {
 
     private static final String FRONT_MATTER = "front-matter";

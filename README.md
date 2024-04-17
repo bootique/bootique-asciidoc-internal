@@ -17,6 +17,8 @@
   under the License.
   -->
 
-# Bootique Asciidoc extension
+# Bootique Asciidoc extension (Deprecated)
 
-Asciidoc postprocessor for customization of Bootique documentation.
+Deprecated Asciidoc postprocessor for customization of Bootique documentation.
+
+See [hugo-asciidoctorj-extension](https://github.com/bootique-tools/hugo-asciidoctorj-extension)
